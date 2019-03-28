@@ -13,11 +13,16 @@
     <a-marker preset="hiro">
 
         <!-- オブジェクトの追加 -->
-        <a-assets>
-            <a-asset-item id="sprVRfes" src="./asset/model/sprVRfes-logo.gltf"></a-asset-item>
-          </a-assets>
+        <a-entity gltf-model="src: url(./asset/model/sprVRfes_dish.gltf);"
+                  position="0 0.1 0"
+                  scale="0.25 0.25 0.25"
+                  shadow="receive: true"></a-entity>
 
-          <a-entity gltf-model="#sprVRfes"></a-entity>
+        <a-entity gltf-model="src: url(./asset/model/sprVRfes_font.gltf);"
+                  position="0 0.1 0"
+                  scale="0.25 0.25 0.25"
+                  shadow="receive: true"></a-entity>
+
 
         <a-entity light="type: ambient; color: #BBB"></a-entity>
         <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
