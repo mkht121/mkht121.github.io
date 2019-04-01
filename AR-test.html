@@ -13,10 +13,7 @@
     <a-marker preset="hiro">
 
         <!-- オブジェクトの追加 -->
-        <a-assets>
-            <a-asset-item id="bucket-obj" src="bucket_fix.obj"></a-asset-item>
-            <a-asset-item id="bucket-mtl" src="bucket_fix.mtl"></a-asset-item>
-        </a-assets>
+        <a-entity obj-model="obj: url(/bucket_fix.obj); mtl: url(/bucket_fix.mtl)"></a-entity>
 
 
         <a-entity light="type: ambient; color: #BBB"></a-entity>
