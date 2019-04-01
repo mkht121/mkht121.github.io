@@ -10,11 +10,16 @@
 </head>
 <body style='margin: 0; overflow: hidden;'>
 <a-scene embedded arjs>
+
+  <a-assets>
+    <a-asset-item id="bucket-obj" src="/bucket_fix.obj"></a-asset-item>
+    <a-asset-item id="bucket-mtl" src="/bucket_fix.mtl"></a-asset-item>
+  </a-assets>
+
     <a-marker preset="hiro">
 
         <!-- オブジェクトの追加 -->
-        <a-entity obj-model="obj: url(bucket_fix.obj); mtl: url(bucket_fix.mtl)"></a-entity>
-
+        <a-entity obj-model="obj: #bucket-obj; mtl: #bucket-mtl"></a-entity>
 
         <a-entity light="type: ambient; color: #BBB"></a-entity>
         <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
