@@ -12,8 +12,8 @@
 <a-scene embedded arjs>
 
   <a-assets>
-    <a-asset-item id="bucket-obj" src="bucket_fix.obj"></a-asset-item>
-    <a-asset-item id="bucket-mtl" src="bucket_fix.mtl"></a-asset-item>
+    <a-asset-item id="bucket-obj" src="/bucket_fix.obj"></a-asset-item>
+    <a-asset-item id="bucket-mtl" src="/bucket_fix.mtl"></a-asset-item>
   </a-assets>
 
     <a-marker preset="hiro">
@@ -21,7 +21,7 @@
         <!-- オブジェクトの追加 -->
         <a-entity obj-model="obj: #bucket-obj; mtl: #bucket-mtl"
                   position="0 0.1 0">
-                  scale="0.25 0.25 0.25"
+
         </a-entity>
 
         <a-entity light="type: ambient; color: #BBB"></a-entity>
